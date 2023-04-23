@@ -11,6 +11,6 @@ csrf = CSRFProtect(app)
 def pagina_inicial():
     return "Laboratório Pipeline DevOps - Eliton"
 
-port = os.environ.get('PORT')
+port = os.environ.get("PORT")
 if __name__ == '__main__':
-    app.run(port)
+    app.run(port, "0.0.0.0")
